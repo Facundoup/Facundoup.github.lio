@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuncio Propio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+
+    .banner {
+      width: 728px;
+      height: 90px;
+      background: linear-gradient(90deg, #ff7e5f, #feb47b);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .banner div, .banner a {
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .banner a:hover {
+      text-decoration: underline;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .banner {
+        flex-direction: column;
+        width: 300px;
+        height: 600px;
+        text-align: center;
+        padding: 2rem;
+        gap: 2rem;
+      }
+
+      .banner div, .banner a {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div>🌮 <strong>Auténtica Comida Mexicana</strong></div>
+    <a href="index/index.html#menu">🍽️ Ver el Menú</a>
+    <a href="index/index.html#promociones">🔥 Promociones Exclusivas</a>
+  </div>
+</body>
+</html>
+
+
